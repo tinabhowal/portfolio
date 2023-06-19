@@ -3,6 +3,8 @@ import './aboutMe.css';
 import image from './images/Frame 8.png';
 import Contact from './contact';
 import Projects from './projects';
+import { Link } from 'react-router-dom';
+import Navbar from './navbar';
 
 function AboutMe() {
   const [text, setText] = useState('');
@@ -14,7 +16,7 @@ function AboutMe() {
   
 
   useEffect(() => {
-    const message = 'Heello World!';
+    const message = '<HHello World!>';
     let currentIndex = 0;
 
     const timer = setInterval(() => {
@@ -82,6 +84,19 @@ function AboutMe() {
 
   return (
     <div className='aboutMe'>
+       {/* <nav>
+        <ul>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav> */}
+
+    <Navbar></Navbar>
+
       <div className={`container ${textComplete ? 'text-complete' : ''}`}>
         <h1>{text}</h1>
       </div>

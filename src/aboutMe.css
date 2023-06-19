@@ -27,17 +27,44 @@
  
 
 
-  .container2 {
-    overflow-x: hidden;
-    height: 100vh;
-  }
+  
 
-  .img{
-    width:70vw;
-    height:120vh;
-    }
-     
-    
+  
+
+/* nav{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.897);
+  width:100vw;
+  z-index: 1;
+  }      
+
+   
+
+nav ul {
+  display: flex; 
+  justify-content: end;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav li {
+  margin-right: 20px; 
+  
+}
+
+nav li:last-child {
+  margin-right: 10px; 
+}
+
+nav a {
+  text-decoration: none;
+  color:rgba(255, 255, 255, 0.801);
+  font-weight: bold;
+} */
+
+
+
       .container {
         position: relative;
         height: 100vh;
@@ -55,7 +82,11 @@
         font-size: 64px;
         color:rgba(255, 255, 255, 0.801);
       }
-    
+      
+      .container2 {
+        overflow-x: hidden;
+        height: 100vh;
+      }
       
     
       .profilePicture{
@@ -69,7 +100,10 @@
         
       }
       
-     
+      .img{
+        width:70vw;
+        height:120vh;
+        }
       
       
       .profilePicture.visible {
