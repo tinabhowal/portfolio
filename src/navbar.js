@@ -1,43 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import './navbar.css';
 
-function Navbar() {
+function Navbars() {
   return (
-    // <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    //   <div className="container">
-    //     <Link className="navbar-brand" to="/">About Me</Link>
-    //     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    //       <span className="navbar-toggler-icon"></span>
-    //     </button>
-    //     <div className="collapse navbar-collapse" id="navbarNav">
-    //       <ul className="navbar-nav ml-auto">
-    //         <li className="nav-item">
-    //           <Link className="nav-link" to="/projects">Projects</Link>
-    //         </li>
-    //         <li className="nav-item">
-    //           <Link className="nav-link" to="/contact">Contact</Link>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </nav>
-
-
-     <nav>
-        <ul>
-        <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav> 
+    <Navbar className="navbar" expand="lg">
+      <Container fluid>
+        {/* <Navbar.Brand href="/">Tina Bhawal</Navbar.Brand> */}
+        <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default Navbars;
+
+
