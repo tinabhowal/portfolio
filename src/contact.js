@@ -50,8 +50,11 @@ const Contact = () => {
             </Button>
             </div>
             <h4 className='or'>Or</h4> */}
-            <Link className='link' to='tinabhowal88@gmail.com'><h2>Contact me via email</h2></Link>
+            {/* <Link className='link' to='tinabhowal88@gmail.com'><h2>Contact me via email</h2></Link> */}
           {/* </Form> */}
+          <a className='link' href='mailto:tinabhowal88@gmail.com'>
+                <h2>Contact me via email</h2>
+              </a>
         </Col>
       </Row>
       </div>
