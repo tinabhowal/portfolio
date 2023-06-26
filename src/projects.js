@@ -131,7 +131,7 @@ const Projects = () => {
                       variant='light'
                       onClick={() => setExpandedProject(null)}
                     >
-                      Collapse
+                      Back
                     </Button>
                   </>
                 ) : (

@@ -1,0 +1,39 @@
+.contactcontainer {
+  background-color:  #040404;
+  }
+
+ 
+  .body{
+    background-color:  #040404;
+    color:rgba(255, 255, 255, 0.801);
+    display: flex;
+    flex-direction: column;
+    overflow-y: visible;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+
+  .link{
+    margin-top: 50px;
+    display:block;
+    text-align: center;
+  }
+
+  .or{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 10px;
+  }
+
+.formbutton{
+  margin:5px;
+}

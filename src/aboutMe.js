@@ -1,8 +1,3 @@
-
-
-
-
-
 import React, { useState, useEffect, useRef } from 'react';
 import './aboutMe.css';
 import image from './images/Frame 8.png';
