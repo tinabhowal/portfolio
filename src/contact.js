@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './navbar';
 import './contact.css';
-import {  Row, Col, Form, Button } from 'react-bootstrap';
+import {  Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import github from './images/github.png';
 import medium from './images/medium.png';
