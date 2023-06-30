@@ -9,31 +9,46 @@
     display: flex;
     flex-direction: column;
     overflow-y: visible;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    /* gap: 200px; */
+    margin:20px;
+    /* position: absolute;
+    left:0; */
+  }
+
+  .personalDetails{
+    position: absolute;
+    left:5%;
+
+    color:rgba(255, 255, 255, 0.801);
   }
 
 
-  .link{
-    margin-top: 50px;
-    display:block;
+  /* .link{
+    margin-top: 50px; 
+    display:block; 
     text-align: center;
-  }
+  } */
 
-  .or{
+  /* .or{
     margin-top: 20px;
     text-align: center;
-  }
+  } */
 
   .social-media{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
-    margin-bottom: 10px;
+    gap:20px;
+    margin: 0 auto;
   }
 
 .formbutton{
   margin:5px;
+}
+
+.findmesection{
+  position: absolute;
+  bottom: 10%;
 }

@@ -1,5 +1,6 @@
 .projects{
     background-color:  #040404;
+   
     
 }
 
@@ -7,19 +8,21 @@
 .body{
     padding-top: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: '100vh';
 }
 
 .border{
     border: 2px solid grey;
 }
 
-.project-row{
+/* .project-row{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .project-col{
     margin-bottom: 4rem;
@@ -56,3 +59,9 @@
    margin: auto;
     
 }
+
+.show-more-button {
+    margin-top: 0;
+    margin-bottom: 2rem; /* Add margin-bottom to create space below the button */
+  }
+  

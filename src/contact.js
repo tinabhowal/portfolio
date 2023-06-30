@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import './contact.css';
 import {  Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import github from './images/github.png';
 import medium from './images/medium.png';
 import linkedin from './images/linkedin.png';
@@ -15,6 +15,19 @@ const Contact = () => {
 
       <div className='body'>
       <div className='formsection'>
+
+
+      <div className='personalDetails'>
+      <Row>
+        <Col className='personalDetailsCol'>
+          <h1>Tina Bhawal</h1>
+          <p><b>Address:</b>  <i>Grunau, Berlin</i></p>
+          <p><b>Ph:</b> </p>
+          <b>Email:</b><i><a className='link' href='mailto:tinabhowal88@gmail.com'> Contact me via email</a></i>
+        </Col>
+      </Row>
+      </div>
+
       <Row>
         <Col className='contactmeform'>
           {/* <Form action='' method='post'>
@@ -52,9 +65,7 @@ const Contact = () => {
             <h4 className='or'>Or</h4> */}
             {/* <Link className='link' to='tinabhowal88@gmail.com'><h2>Contact me via email</h2></Link> */}
           {/* </Form> */}
-          <a className='link' href='mailto:tinabhowal88@gmail.com'>
-                <h2>Contact me via email</h2>
-              </a>
+          
         </Col>
       </Row>
       </div>
@@ -62,7 +73,7 @@ const Contact = () => {
       <div className='findmesection'>
       <Row>
         <Col className='findme'>
-          <h2>You may also find me on</h2>
+          <h6>Find me on</h6>
           <div class="social-media">
             <a href="https://github.com/tinabhowal" target="blank">
               <img src={github} alt="github logo" width="30" height="30" />

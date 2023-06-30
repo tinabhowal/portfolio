@@ -99,6 +99,9 @@ const Projects = () => {
     },
     
   ];
+
+  const displayedProjects = expandedProject ? projects : projects.slice(0, 3);
+
   return (
   <div className='projects'>
   <Navbar></Navbar>
@@ -106,7 +109,7 @@ const Projects = () => {
   <div className='body'>
     <Container fluid>
       <Row className='project-row'>
-        {projects.map((project) => (
+        {displayedProjects.map((project) => (
           <Col key={project.id} xs={12} md={4} className="project-col">
             <Card  className='card'>
               <Card.Img className="project-image" variant='top' src={project.image} />
@@ -149,6 +152,19 @@ const Projects = () => {
         ))}
       </Row>
     </Container>
+    
+    
+      {!expandedProject && projects.length > 3 && (
+      <Button
+         className='show-more-button'
+         variant='light'
+         onClick={() => setExpandedProject(true)}
+         
+         >
+          Show More
+         </Button>
+    )}
+   
   </div>
 </div>
 
