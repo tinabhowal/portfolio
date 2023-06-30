@@ -25,16 +25,7 @@
   }
 
 
-  /* .link{
-    margin-top: 50px; 
-    display:block; 
-    text-align: center;
-  } */
-
-  /* .or{
-    margin-top: 20px;
-    text-align: center;
-  } */
+ 
 
   .social-media{
     display: flex;
@@ -51,4 +42,8 @@
 .findmesection{
   position: absolute;
   bottom: 10%;
+}
+
+.findme{
+  text-align: center;
 }
