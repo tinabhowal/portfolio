@@ -137,7 +137,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './aboutMe.css';
 import image from './images/Frame 8.png';
 import Navbars from './navbar';
-// import { useHistory } from 'react-router-dom';
 
 
 function AboutMe() {
@@ -204,6 +203,7 @@ function AboutMe() {
                     }
                   }, 2000);
     }
+
      
   }, [textComplete, textShifted]);
 
@@ -299,4 +299,6 @@ function AboutMe() {
 }
 
 export default AboutMe;
+
+
 
