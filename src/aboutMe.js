@@ -152,6 +152,7 @@ function AboutMe() {
 
   const profilePictureRef = useRef(null);
 
+
   useEffect(() => {
     const message = 'Tiina Bhawal';
     let currentIndex = 0;
@@ -253,7 +254,7 @@ function AboutMe() {
       learningDiv.classList.add('introDiv', 'skillsDiv');
 
       const learningP1 = document.createElement('p');
-      learningP1.textContent = 'Acquainted with: Angular, React Native, Nodejs, MongoDB';
+      learningP1.textContent = 'Acquainted with: Angular, Typescript, React Native, Nodejs, MongoDB';
       learningDiv.appendChild(learningP1);
 
       
