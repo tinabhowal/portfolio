@@ -64,7 +64,7 @@ const Projects = () => {
       title: 'myFlix-client-Angular',
       image: angular,
       description:'',
-      demoLink: 'https://tinabhowal.github.io/myFlix-Angular-client/welcome',
+      demoLink: 'https://my-flix-angular-client-qh47v87k4-tinabhowal.vercel.app/welcome',
       githubLink: 'https://github.com/tinabhowal/myFlix-Angular-client',
      
     },

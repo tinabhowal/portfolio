@@ -8,7 +8,6 @@
         height: 100vh;
         max-width: 100vw;
         margin-top: 100px;
-      
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -26,8 +25,8 @@
       }
 
       .container.text-complete{
-        
-      height:40vh
+        height:20vh;
+      
       }
 
       .profilePicture{
@@ -44,12 +43,12 @@
         justify-content: center;
         align-items: center;
         transition: all 0.5s ease;
-        
+        margin-top: 100px;
       }
     
       .profilePicture.circular img {
-        width: 420px;
-        height: 420px;
+        width: 380px;
+        height: 380px;
         position: absolute;
         border-radius: 50%;
         transition: all 2s ease;
@@ -66,7 +65,7 @@
         transform: translateX(-35vw);
         transition: all 1s ease;
         margin-left: 4rem; 
-        margin-top: 1rem;
+        margin-top: 4rem;
       }
     
       .profilePicture.sidebar img {
@@ -74,6 +73,7 @@
         transform: translateX(-8%);
         height: 60vh;
         width: 25vw;
+        margin-top: 120px;
       }
 
       .introDiv {
@@ -83,7 +83,6 @@
         justify-content: center;
         position: relative;
         align-items: center;
-        top: 50%;
         opacity: 0;
         transition: opacity 0.5s ease;
         color:rgba(255, 255, 255, 0.801);
@@ -121,73 +120,7 @@
         }
       }
 
-       /* @media (max-width: 1200px)and (min-width: 370px) {
-        .aboutMe{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        }
-        
-        .textShifted {
-          transform: translate(-12vw, -2vh); 
-          position: absolute;
-        }
-
-        .container h1{
-          font-size: 48px; 
-        }
-
-        .profilePicture{
-        height: 20vh;
-        }
-
-        .profilePicture.circular img {
-          width: 320px;
-          height: 320px;
-          position: absolute;
-          border-radius: 50%;
-          transition: all 2s ease;    
-        }
-
-        .profilePicture.sidebar {
-          transform: translate(-35vw, -8vh);
-          transition: all 1s ease;
-          margin-left: 4rem; 
-          margin-top: 0.5rem;
-        }
-      
-        .profilePicture.sidebar img {
-          border-radius: 8px;
-          transform: translateX(20%);
-          height: 50vh;
-          width: 50vw;
-        }
-
-        .introDiv {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2rem;
-          justify-content: center;
-          position: relative;
-          align-items: center;
-          opacity: 0;
-          transition: opacity 0.5s ease;
-          color:rgba(255, 255, 255, 0.801);
-          margin-top: 20%;
-          margin-left: 20%;
-      }
-    }
-        */
-
-
-
-
-
-
-
+       
 
         @media (max-width: 1200px) and (min-width: 370px) {
           .aboutMe {
@@ -206,7 +139,6 @@
           }
         
           .container h1 {
-            /* Adjust the font size as per your requirement */
             font-size: 48px;
             margin: 0 auto;
           }
@@ -218,44 +150,43 @@
           }
         
           .profilePicture.circular img {
-           
             width: 320px;
             height: 320px;
-           
-            /* transform: translateX(60%); */
             margin: 0 auto;
           }
         
           .profilePicture.sidebar {
             transform: translate(0vw, 0vh);
             transition: all 1s ease;
-            /* margin-left: 40%; */
-            /* margin-top: 0.5rem; */
             width: 25vw;
-            margin:0 auto;
-           
+            height: 50vh;
+            margin:0 auto;          
           }
         
           .profilePicture.sidebar img {
             border-radius: 8px;
             transform: translateX(0%);
-            /* height: 50vh;
-            width: 40vw; */
             margin: 0 auto;
           }
         
           .introDiv {
-            /* Adjust the margin values as per your requirement */
-            /* margin-top: 30%; */
             width:50vw;
             height:90vh;
             flex-direction: column;
             margin: 0 auto;
-           
+            margin-top: 40px;
+          }
+
+          .skillsDiv{
+            flex-direction: row;
+            /* margin-top: 20px; */
+            height:10vh;
           }
         }
 
-
+.skillsDiv{
+  color: rgb(152, 152, 237);
+}
 
 
 

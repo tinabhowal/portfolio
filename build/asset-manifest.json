@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b76dc8bd.css",
-    "main.js": "/portfolio/static/js/main.254bf78b.js",
+    "main.js": "/portfolio/static/js/main.b96636bc.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/myflix client react.png": "/portfolio/static/media/myflix client react.8bf5bd2cc94a8d5f39df.png",
     "static/media/newPokemon.png": "/portfolio/static/media/newPokemon.c46652c7f28c28f78d8d.png",
@@ -14,11 +14,11 @@
     "static/media/oldPoke.png": "/portfolio/static/media/oldPoke.c1c4d81d8f47fc88b286.png",
     "index.html": "/portfolio/index.html",
     "main.b76dc8bd.css.map": "/portfolio/static/css/main.b76dc8bd.css.map",
-    "main.254bf78b.js.map": "/portfolio/static/js/main.254bf78b.js.map",
+    "main.b96636bc.js.map": "/portfolio/static/js/main.b96636bc.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b76dc8bd.css",
-    "static/js/main.254bf78b.js"
+    "static/js/main.b96636bc.js"
   ]
 }

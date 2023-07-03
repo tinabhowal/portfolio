@@ -137,7 +137,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './aboutMe.css';
 import image from './images/Frame 8.png';
 import Navbars from './navbar';
-
+// import { useHistory } from 'react-router-dom';
 
 
 function AboutMe() {
@@ -146,6 +146,9 @@ function AboutMe() {
   const [circularpic, setCircularpic] = useState(false);
   const [textShifted, setTextShifted] = useState(false);
   const [picAtSide, setPicAtSide] = useState(false);
+  const [introP3visible, setIntroP3visible] = useState(false);
+  // const history = useHistory();
+
 
   const profilePictureRef = useRef(null);
 
@@ -211,17 +214,18 @@ function AboutMe() {
       introDiv.classList.add('introDiv');
 
       const introP1 = document.createElement('p');
-      introP1.textContent = 'Newbie front-end developer';
+      introP1.textContent = 'Newbie front-end developer. Have experience as a teacher, teacher trainer, and educational content creator.';
       introDiv.appendChild(introP1);
 
       const introP2 = document.createElement('p');
       introP2.textContent =
-        'Love exploring UX/UI tools like Figma and Adobe XD';
+        'Love interaction design and exploring UX/UI tools like Figma and Adobe XD.';
       introDiv.appendChild(introP2);
 
       const introP3 = document.createElement('p');
-      introP3.textContent = 'Can doodle and illustrate for hours';
+      introP3.textContent = 'Can doodle and illustrate for hours. Invest time creating learning material with illustrations.';
       introDiv.appendChild(introP3);
+      setIntroP3visible(true);
 
       document.body.appendChild(introDiv);
 
@@ -235,6 +239,40 @@ function AboutMe() {
       };
     }
   }, [picAtSide]);
+
+  useEffect(() => {
+    if (introP3visible) {
+      const skillsDiv = document.createElement('div');
+      skillsDiv.classList.add('introDiv', 'skillsDiv');
+
+      const skillsP1 = document.createElement('p');
+      skillsP1.textContent = 'Skills :    HTML, CSS, Javascript, React, Figma';
+      skillsDiv.appendChild(skillsP1);
+
+      const learningDiv = document.createElement('div');
+      learningDiv.classList.add('introDiv', 'skillsDiv');
+
+      const learningP1 = document.createElement('p');
+      learningP1.textContent = 'Acquainted with: Angular, React Native, Nodejs, MongoDB';
+      learningDiv.appendChild(learningP1);
+
+      
+
+      document.body.appendChild(skillsDiv);
+      document.body.appendChild(learningDiv);
+
+      skillsDiv.classList.add('fade-in-0');
+      skillsP1.classList.add('fade-in-1');
+
+      learningDiv.classList.add('fade-in-0');
+      learningP1.classList.add('fade-in-1');
+     
+      return () => {
+        document.body.removeChild(skillsDiv); 
+        document.body.removeChild(learningDiv)
+      };
+    }
+  })
 
 
 
