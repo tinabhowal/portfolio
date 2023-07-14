@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Navbar from './navbar';
 import './projects.css';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Modal } from 'react-bootstrap';
 import reactImage from './images/myflix client react.png';
 import oldPokemon from './images/oldPoke.png';
 import angular from './images/angular.png';
@@ -11,11 +11,13 @@ import chatApp1 from './images/chatapp screenshots.jpeg';
 import firstPortfolio from './images/firstportfolio.png';
 import myFlixApi from './images/myFlixApi.png';
 import newPoke from './images/newPokemon.png';
+import Figma5 from './images/Figma5.png';
 
 
 const Projects = () => {
 
   const [expandedProject, setExpandedProject] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const projects = [
     
@@ -63,7 +65,7 @@ const Projects = () => {
       id: 5,
       title: 'myFlix-client-Angular',
       image: angular,
-      description:'',
+      description:'Using Angular, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database).',
       demoLink: 'https://my-flix-angular-client-qh47v87k4-tinabhowal.vercel.app/welcome',
       githubLink: 'https://github.com/tinabhowal/myFlix-Angular-client',
      
@@ -97,15 +99,32 @@ const Projects = () => {
       githubLink: 'https://github.com/tinabhowal/tinaprofile',
       
     },
+
+    {
+      id: 9,
+      title: 'My Figma experiments',
+      image:  Figma5,
+      figmaLink: '/figma'
+    },
     
   ];
 
   const displayedProjects = expandedProject ? projects : projects.slice(0, 3);
 
+  const openModal = (projectID) => {
+     setExpandedProject(projectID);
+     setShowModal(true);
+  }
+
+  const closeModal = () => {
+    // setExpandedProject(null);
+    setShowModal(false);
+  }
+
   return (
   <div className='projects'>
   <Navbar></Navbar>
-  {/* <div className='header'>Projects</div> */}
+  
   <div className='body'>
     <Container fluid>
       <Row className='project-row'>
@@ -121,10 +140,23 @@ const Projects = () => {
                   </Button>
                 )}
                 {' '}
+                {project.githubLink && (
                 <Button className='project-button' variant='dark' href={project.githubLink}>
                   GitHub
-                </Button>{' '}
-                {expandedProject === project.id ? (
+                </Button>
+                )}
+                {' '}
+
+                {project.id === 9 && project.figmaLink && (
+                  <Button
+                  className='border'
+                  variant='light'
+                  href={project.figmaLink}
+                >
+                  Show Figma Projects
+                </Button>
+                )}
+                {/* {expandedProject === project.id ? (
                   <>
                     {project.description && (
                       <Card.Text>{project.description}</Card.Text>
@@ -132,20 +164,22 @@ const Projects = () => {
                     <Button
                       className='project-button border'
                       variant='light'
-                      onClick={() => setExpandedProject(null)}
+                      onClick={() => closeModal()}
                     >
                       Back
                     </Button>
                   </>
-                ) : (
+                ) : ( */}
+                {project.description && (
                   <Button
                     className='border'
                     variant='light'
-                    onClick={() => setExpandedProject(project.id)}
+                    onClick={() => openModal(project.id)}
                   >
                     Project Brief
                   </Button>
-                )}
+                  )}
+                {/* )} */}
               </Card.Body>
             </Card>
           </Col>
@@ -164,6 +198,36 @@ const Projects = () => {
           Show More
          </Button>
     )}
+
+    <Modal show={showModal} onHide={closeModal}>
+     <Modal.Header closeButton>
+      <Modal.Title>Project Brief</Modal.Title>
+     </Modal.Header>
+     <Modal.Body>
+      {expandedProject && projects.map((project) => {
+        if(project.id === expandedProject){
+          return (
+            <div key={project.id}>
+              <h3>{project.title}</h3>
+
+              {/* {project.figmaImages && project.figmaImages.map((figmaImage, index) => (
+            <img key={index} src={figmaImage} alt={`Figma ${index + 1}`} style={{width:'300px', height:'400px'}}/>
+             ))} */}
+
+
+              <p>{project.description}</p>
+            </div>
+          );
+        }
+        return null;
+      })}
+      </Modal.Body> 
+      <Modal.Footer>
+        <Button variant='secondary' onClick={closeModal}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
    
   </div>
 </div>

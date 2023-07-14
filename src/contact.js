@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './navbar';
 import './contact.css';
-import {  Row, Col } from 'react-bootstrap';
+import {  Row, Col, Button } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 import github from './images/github.png';
 import medium from './images/medium.png';
@@ -9,6 +9,7 @@ import linkedin from './images/linkedin.png';
 
 
 const Contact = () => {
+  
   return (
     <div className='contactcontainer'>
       <Navbar></Navbar>
@@ -21,9 +22,10 @@ const Contact = () => {
       <Row>
         <Col className='personalDetailsCol'>
           <h1>Tina Bhawal</h1>
-          <p><b>Address:</b>  <i>Grunau, Berlin</i></p>
-          <p><b>Ph:</b> </p>
-          <b>Email:</b><i><a className='link' href='mailto:tinabhowal88@gmail.com'> Contact me via email</a></i>
+          <p><b>Location:</b>  <i> Berlin</i></p>
+          <p><b><i>Ph: +176-7483-9525</i></b> </p>
+          <p><b>Email: </b><i><a className='link' href='mailto:tinabhawal5@gmail.com'> Contact me via email</a></i></p>
+          <p><b>Resume: </b><i><a className='link' href='https://drive.google.com/file/d/1yhGzj_fhRO3vQgqPc1VFB-VAc0kflQNq/view?usp=sharing' target='blank'>Download Resume</a></i></p>
         </Col>
       </Row>
       </div>

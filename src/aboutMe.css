@@ -65,7 +65,7 @@
         transform: translateX(-35vw);
         transition: all 1s ease;
         margin-left: 4rem; 
-        margin-top: 4rem;
+        margin-top: 1rem;
       }
     
       .profilePicture.sidebar img {
@@ -73,7 +73,7 @@
         transform: translateX(-8%);
         height: 60vh;
         width: 25vw;
-        margin-top: 120px;
+        margin-top: 200px;
       }
 
       .introDiv {

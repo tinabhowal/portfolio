@@ -18,11 +18,11 @@
     border: 2px solid grey;
 }
 
-/* .project-row{
+.project-row{
     display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+    /* justify-content: center;
+    align-items: center; */
+}
 
 .project-col{
     margin-bottom: 4rem;
@@ -60,8 +60,8 @@
     
 }
 
-.show-more-button {
+/* .show-more-button {
     margin-top: 0;
-    margin-bottom: 2rem; /* Add margin-bottom to create space below the button */
+    margin-bottom: 2rem; 
   }
-  
+   */

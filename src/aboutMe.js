@@ -136,6 +136,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './aboutMe.css';
 import image from './images/Frame 8.png';
+import doodle from './images/doodle7.png';
 import Navbars from './navbar';
 
 
@@ -220,11 +221,11 @@ function AboutMe() {
 
       const introP2 = document.createElement('p');
       introP2.textContent =
-        'Love interaction design and exploring UX/UI tools like Figma and Adobe XD.';
+        'Love exploring UX/UI tools like Figma and Adobe XD. Currently pursuing Google UX design course.';
       introDiv.appendChild(introP2);
 
       const introP3 = document.createElement('p');
-      introP3.textContent = 'Can doodle and illustrate for hours. Invest time creating learning material with illustrations.';
+      introP3.textContent = 'Invest time creating learning material with illustrations.';
       introDiv.appendChild(introP3);
       setIntroP3visible(true);
 
@@ -247,14 +248,14 @@ function AboutMe() {
       skillsDiv.classList.add('introDiv', 'skillsDiv');
 
       const skillsP1 = document.createElement('p');
-      skillsP1.textContent = 'Skills :    HTML, CSS, Javascript, React, Figma';
+      skillsP1.textContent = 'Skills :    HTML, CSS, JavaScript, React, Bootstrap, Wireframing, Prototyping, Figma, User research (competitor analysis, user interviews), User flows, Illustration';
       skillsDiv.appendChild(skillsP1);
 
       const learningDiv = document.createElement('div');
       learningDiv.classList.add('introDiv', 'skillsDiv');
 
       const learningP1 = document.createElement('p');
-      learningP1.textContent = 'Acquainted with: Angular, Typescript, React Native, Nodejs, MongoDB';
+      learningP1.textContent = 'Acquainted with: Angular, Typescript, React Native, Nodejs, MongoDB, SQL, Adobe XD';
       learningDiv.appendChild(learningP1);
 
       
@@ -290,7 +291,7 @@ function AboutMe() {
           ref={profilePictureRef}
           className={`profilePicture ${textComplete ? 'visible' : ''}`}
         >
-          <img className='img' src={image} alt='profile' />
+          <img className='img' src={doodle} alt='profile' />
         </div>
 
       

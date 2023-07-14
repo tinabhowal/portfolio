@@ -1,10 +1,5 @@
-
-
-
-
 // import React from 'react';
 // import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-
 // function Map() {
 //   const mapContainerStyle = {
 //     width: '50%',
@@ -19,8 +14,6 @@
 //   const mapOptions = {
 //     mapTypeId: 'hybrid',
 //   };
-
-
 //   return (
 //     <LoadScript googleMapsApiKey="AIzaSyDacAp7i8NtOKq6Mlgk-EQsgjdPwRMjMd8">
 //       <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={10} options={mapOptions}
