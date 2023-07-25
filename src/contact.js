@@ -81,7 +81,7 @@ const Contact = () => {
               <img src={github} alt="github logo" width="30" height="30" />
             </a>
 
-            <a href="https://www.linkedin.com/in/tina-bhowal-17a0441b3" target="blank">
+            <a href="https://www.linkedin.com/in/tina-bhawal-17a0441b3/" target="blank">
               <img src={linkedin} alt="linkedin logo" width="30" height="30" />
             </a> 
 
