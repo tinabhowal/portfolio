@@ -73,7 +73,7 @@ const Contact = () => {
       </div>
 
       <div className='findmesection'>
-      <Row>
+      <Row className='findmerow'>
         <Col className='findme'>
           <h6>Find me on</h6>
           <div class="social-media">

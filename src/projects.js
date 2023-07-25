@@ -86,6 +86,7 @@ const Projects = () => {
       title: 'ChatApp',
       image: chatApp1,
       description:'A chat app for mobile devices using React Native. The app provides users with a chat interface and options to share images, videos and their location.',
+      demoLink: 'https://drive.google.com/file/d/1-XRlqpVIKAqozukG8f5NgiyH276M0UW0/view?usp=sharing',
       githubLink: 'https://github.com/tinabhowal/Chat-App',
       
     },

@@ -137,6 +137,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './aboutMe.css';
 import image from './images/Frame 8.png';
 import doodle from './images/doodle7.png';
+import newprof from './images/newprof.png';
 import Navbars from './navbar';
 
 
@@ -291,7 +292,7 @@ function AboutMe() {
           ref={profilePictureRef}
           className={`profilePicture ${textComplete ? 'visible' : ''}`}
         >
-          <img className='img' src={doodle} alt='profile' />
+          <img className='img' src={newprof} alt='profile' />
         </div>
 
       
