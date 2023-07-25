@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from './navbar';
 import './contact.css';
-import {  Row, Col, Button } from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
+import {  Row, Col } from 'react-bootstrap';
 import github from './images/github.png';
 import medium from './images/medium.png';
 import linkedin from './images/linkedin.png';
+
 
 
 const Contact = () => {
@@ -92,6 +92,17 @@ const Contact = () => {
           </div>  
         </Col>
       </Row>
+      </div>
+
+      <div className='impressum'>
+        <Row>
+          <Col>
+          <div>
+            Created by Tina Bhawal
+            <a href="https://drive.google.com/file/d/1-u_is5_RkfZjiMTgRFuyMdniuWyDTdbO/view?usp=sharing" target="blank">Impressum</a>
+          </div>
+          </Col>
+        </Row>
       </div>
 
       </div>
