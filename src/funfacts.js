@@ -37,7 +37,7 @@ const FunFacts = () => {
   };
 
   return (
-    <div className='body'>
+    <div className='funfactsbody'>
       <Navbars></Navbars>
 
       <Row className="row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
@@ -53,7 +53,7 @@ const FunFacts = () => {
       </Card>
       </Col> */}
    
-      <Col className="mb-3">
+      <Col className="mb-3 funfactscol">
       <Card className='modalcard'>
         <Card.Img variant="top" src={sloth} style={{width:'300px', height:'400px'}} />
         <Card.Body>
@@ -65,7 +65,7 @@ const FunFacts = () => {
       </Card>
       </Col>
 
-      <Col className="mb-3">
+      <Col className="mb-3 funfactscol">
       <Card className='modalcard'>
         <Card.Img variant="top" src={diversity} style={{width:'100%', height:'400px'}} />
         <Card.Body>

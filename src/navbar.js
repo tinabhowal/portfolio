@@ -15,7 +15,7 @@ function Navbars() {
 
   return (
     <Navbar className="navbar" expand="lg" variant="dark">
-      <Container fluid>
+      <Container fluid className='navC' >
         <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">

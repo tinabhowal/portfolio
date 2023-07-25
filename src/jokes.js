@@ -12,23 +12,23 @@ const Jokes = () => {
     <div style={{color:'white', marginTop:'100px', display: 'flex', justifyContent:'center', flexDirection: 'column', alignItems: 'center', gap:'80px'}}>
     <Navbars></Navbars>
 
-    <div>
+    <div style={{textAlign:'center',  display: 'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <p>When I asked ChatGPT what he thinks about me.</p>
-        <img src={doodle5} alt='jokes' style={{height:'350px', width:'700px'}}></img>
+        <img src={doodle5} alt='jokes' style={{height:'60vh', width:'65vw'}}></img>
         <p>He went on to explain it further.  :(</p>
-        <img src={doodle6} alt='jokes' style={{height:'350px', width:'700px'}}></img>
+        <img src={doodle6} alt='jokes' style={{height:'70vh', width:'75vw'}}></img>
     </div>
 
-    <div>
+    <div style={{textAlign:'center',  display: 'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
     <p>How my mother taught me about if else statement.</p>    
-    <img src={doodle1} alt='jokes' style={{height:'350px', width:'350px'}}></img>
-    <img src={doodle2} alt='jokes' style={{height:'350px', width:'350px'}}></img>
+    <img src={doodle1} alt='jokes' style={{height:'60vh', width:'65vw'}}></img>
+    <img src={doodle2} alt='jokes' style={{height:'60vh', width:'65vw'}}></img>
     </div>
 
-    <div>
+    <div style={{textAlign:'center',  display: 'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <p>Did you say imposter syndrome?</p>
-        <img src={doodle3} alt='jokes' style={{height:'350px', width:'350px'}}></img>
-        <img src={doodle4} alt='jokes' style={{height:'350px', width:'350px'}}></img>
+        <img src={doodle3} alt='jokes' style={{height:'60vh', width:'65vw'}}></img>
+        <img src={doodle4} alt='jokes' style={{height:'60vh', width:'65vw'}}></img>
     </div>
    
     </div>

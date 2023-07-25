@@ -3,12 +3,12 @@
     margin-top:100px;
 } */
 
-.body{
+.funfactsbody{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    padding-top: 100px;
 }
 
 
@@ -17,4 +17,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.funfactscol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

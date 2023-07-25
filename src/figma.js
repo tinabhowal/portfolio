@@ -10,7 +10,7 @@ const Figma = () => {
     <div>
         <Navbars></Navbars>
         
-        <div style={{color:'white', marginTop:'100px', display: 'flex', justifyContent:'center', flexDirection: 'column', alignItems: 'center', gap:'80px'}}>
+        <div style={{textAlign: 'center', color:'white', marginTop:'100px', display: 'flex', justifyContent:'center', flexDirection: 'column', alignItems: 'center', gap:'80px'}}>
         Some of my Figma experiments as a participant of "Daily UI Challenge"
         <img src={Figma1} alt='daily UI challenge' style={{width:'70vw'}}></img>
 

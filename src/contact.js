@@ -14,7 +14,7 @@ const Contact = () => {
     <div className='contactcontainer'>
       <Navbar></Navbar>
 
-      <div className='body'>
+      <div className='contactsbody'>
       <div className='formsection'>
 
 

@@ -23,6 +23,7 @@
   z-index: 1;
   background-color:  #040404;
   width: 100%;
+  text-align: center;
 }
 
 .nav-link:last-child {
@@ -42,6 +43,15 @@
 .navbar .nav-link.active {
   font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
 
 
 

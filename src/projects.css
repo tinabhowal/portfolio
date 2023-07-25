@@ -1,6 +1,6 @@
 .projects{
     background-color:  #040404;
-   
+    
     
 }
 
@@ -27,6 +27,8 @@
 .project-col{
     margin-bottom: 4rem;
     border: none;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -60,8 +62,11 @@
     
 }
 
-/* .show-more-button {
-    margin-top: 0;
-    margin-bottom: 2rem; 
+.show-more-button {
+   
+   
+    display: block;
+  margin: 0 auto;
+   
   }
-   */
+  

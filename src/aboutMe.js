@@ -248,30 +248,30 @@ function AboutMe() {
       skillsDiv.classList.add('introDiv', 'skillsDiv');
 
       const skillsP1 = document.createElement('p');
-      skillsP1.textContent = 'Skills :    HTML, CSS, JavaScript, React, Bootstrap, Wireframing, Prototyping, Figma, User research (competitor analysis, user interviews), User flows, Illustration';
+      skillsP1.textContent = 'Skills :    HTML, CSS, JavaScript, React, Bootstrap, Wireframing, Prototyping, Figma, User research (competitor analysis, user interviews), User flows, Illustration, Angular, Typescript, React Native, Nodejs, MongoDB, SQL, Adobe XD';
       skillsDiv.appendChild(skillsP1);
 
-      const learningDiv = document.createElement('div');
-      learningDiv.classList.add('introDiv', 'skillsDiv');
+      // const learningDiv = document.createElement('div');
+      // learningDiv.classList.add('introDiv', 'skillsDiv');
 
-      const learningP1 = document.createElement('p');
-      learningP1.textContent = 'Acquainted with: Angular, Typescript, React Native, Nodejs, MongoDB, SQL, Adobe XD';
-      learningDiv.appendChild(learningP1);
+      // const learningP1 = document.createElement('p');
+      // learningP1.textContent = 'Acquainted with: Angular, Typescript, React Native, Nodejs, MongoDB, SQL, Adobe XD';
+      // learningDiv.appendChild(learningP1);
 
       
 
       document.body.appendChild(skillsDiv);
-      document.body.appendChild(learningDiv);
+      // document.body.appendChild(learningDiv);
 
       skillsDiv.classList.add('fade-in-0');
       skillsP1.classList.add('fade-in-1');
 
-      learningDiv.classList.add('fade-in-0');
-      learningP1.classList.add('fade-in-1');
+      // learningDiv.classList.add('fade-in-0');
+      // learningP1.classList.add('fade-in-1');
      
       return () => {
         document.body.removeChild(skillsDiv); 
-        document.body.removeChild(learningDiv)
+        // document.body.removeChild(learningDiv)
       };
     }
   })
