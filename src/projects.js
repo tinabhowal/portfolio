@@ -12,6 +12,7 @@ import firstPortfolio from './images/firstportfolio.png';
 import myFlixApi from './images/myFlixApi.png';
 import newPoke from './images/newPokemon.png';
 import Figma5 from './images/Figma5.png';
+import portfolio from './images/portfolio.png';
 
 
 const Projects = () => {
@@ -107,6 +108,15 @@ const Projects = () => {
       image:  Figma5,
       figmaLink: '/figma'
     },
+
+    {
+      id: 10,
+      title: 'My React Portfolio',
+      image: portfolio,
+      description: 'My first practice portfolio, which was built using HTML and CSS, has been rebuilt using React js.',
+      githubLink: 'https://github.com/tinabhowal/portfolio',
+      caseStudy: 'https://drive.google.com/file/d/1BBtT_q4DEGLv1ZpKviQ-gQtI1GbkfNf1/view?usp=sharing'
+    }
     
   ];
 
@@ -122,6 +132,10 @@ const Projects = () => {
     setShowModal(false);
   }
 
+  // const handleLink = (link) => {
+  //   window.open(link, '_blank');
+  // }
+
   return (
   <div className='projects'>
   <Navbar></Navbar>
@@ -136,14 +150,19 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 {project.demoLink && (
-                  <Button className='project-button' variant='primary' href={project.demoLink}>
+                  <Button className='project-button' variant='primary'>
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color: 'white'}}>
                     Demo
+                    </a>
                   </Button>
                 )}
                 {' '}
                 {project.githubLink && (
-                <Button className='project-button' variant='dark' href={project.githubLink}>
+                <Button className='project-button' variant='dark'>
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color: 'white'}}>
                   GitHub
+                  </a>
+                  
                 </Button>
                 )}
                 {' '}
@@ -155,6 +174,16 @@ const Projects = () => {
                   href={project.figmaLink}
                 >
                   Show Figma Projects
+                </Button>
+                )}
+                {project.id === 10 && project.caseStudy && (
+                  <Button
+                  className='border'
+                  variant='light'
+                >
+                  <a href={project.caseStudy} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none'}}>
+                  Case Study
+                  </a>
                 </Button>
                 )}
                 {/* {expandedProject === project.id ? (
