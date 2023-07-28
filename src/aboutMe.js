@@ -249,7 +249,7 @@ function AboutMe() {
       skillsDiv.classList.add('introDiv', 'skillsDiv');
 
       const skillsP1 = document.createElement('p');
-      skillsP1.textContent = 'Skills :    HTML, CSS, JavaScript, React, Bootstrap, Wireframing, Prototyping, Figma, User research (competitor analysis, user interviews), User flows, Illustration, Angular, Typescript, React Native, Nodejs, MongoDB, SQL, Adobe XD';
+      skillsP1.textContent = 'Skills :    HTML, CSS, JavaScript, React, Bootstrap, Angular, Typescript, React Native, Nodejs, Wireframing, Prototyping, User research (competitor analysis, user interviews), User flows, Illustration, MongoDB, SQL, Expo, Adobe XD, Figma ';
       skillsDiv.appendChild(skillsP1);
 
       // const learningDiv = document.createElement('div');
