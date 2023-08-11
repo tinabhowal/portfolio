@@ -20,11 +20,13 @@
   .personalDetails{
     position: absolute;
     left:5%;
-
+    top: 25%;
     color:rgba(255, 255, 255, 0.801);
   }
 
-
+.link{
+  color: #0076B2;
+}
  
 
 .formbutton{
@@ -72,6 +74,10 @@
   justify-content: center;
   align-items: center;
   width:100%;
+}
+
+.impressum a{
+  color: #0076B2;
 }
 
 .impressum a{

@@ -21,9 +21,9 @@ const Contact = () => {
       <div className='personalDetails'>
       <Row>
         <Col className='personalDetailsCol'>
-          <h1>Tina Bhawal</h1>
+          {/* <h1>Tina Bhawal</h1> */}
           <p><b>Location:</b>  <i> Berlin</i></p>
-          <p><b><i>Ph: +176-7483-9525</i></b> </p>
+          {/* <p><b><i>Ph: +176-7483-9525</i></b> </p> */}
           <p><b>Email: </b><i><a className='link' href='mailto:tinabhawal5@gmail.com'> Contact me via email</a></i></p>
           <p><b>Resume: </b><i><a className='link' href='https://drive.google.com/file/d/1J5UBC-Jk2D4dyDL2GQAhugaT5jGK01ub/view?usp=sharing' target='blank'>Download Resume</a></i></p>
         </Col>

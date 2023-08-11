@@ -6,9 +6,8 @@
   z-index: 999;
   background-color: #040404;
   /* background-color: transparent; */
-  height: 10vh;
-
-  
+  height: 12vh;
+  box-shadow: 0 4px 18px rgba(206, 206, 206, 0.2);
 } 
 
 
@@ -16,6 +15,11 @@
 .navbar-nav {
   margin-left: auto;
 }
+
+.name{
+  margin-left: 1rem;
+}
+
 
 .nav-link {
   color:rgba(255, 255, 255, 0.801);
@@ -28,7 +32,7 @@
 
 .nav-link:last-child {
   
-  margin-right: 20px;
+  margin-right: 2rem;
  
 }
 
@@ -47,7 +51,11 @@
 
 
 
-
+@media (max-width: 768px) {
+  .navbar-nav {
+    box-shadow: 0 4px 18px rgba(206, 206, 206, 0.413);
+  }
+}
 
 
 
