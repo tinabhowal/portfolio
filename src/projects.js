@@ -12,7 +12,7 @@ import firstPortfolio from './images/firstportfolio.png';
 import myFlixApi from './images/myFlixApi.png';
 import newPoke from './images/newPokemon.png';
 import Figma5 from './images/Figma5.png';
-import portfolio from './images/portfolio.png';
+import portfolio from './images/newprof2.png';
 
 
 const Projects = () => {
@@ -176,7 +176,7 @@ const Projects = () => {
                   Show Figma Projects
                 </Button>
                 )}
-                {project.id === 10 && project.caseStudy && (
+                {/* {project.id === 10 && project.caseStudy && (
                   <Button
                   className='border'
                   variant='light'
@@ -185,7 +185,7 @@ const Projects = () => {
                   Case Study
                   </a>
                 </Button>
-                )}
+                )} */}
                 {/* {expandedProject === project.id ? (
                   <>
                     {project.description && (
