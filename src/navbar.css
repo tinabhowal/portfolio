@@ -1,7 +1,7 @@
 
 .navbar {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   top: 0;
   z-index: 999;
   background-color: #040404;
@@ -10,6 +10,9 @@
   box-shadow: 0 4px 18px rgba(206, 206, 206, 0.2);
 } 
 
+.navC.container-fluid{
+  padding:0;
+}
 
 
 .navbar-nav {

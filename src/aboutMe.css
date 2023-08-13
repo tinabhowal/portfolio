@@ -198,6 +198,7 @@
   height:95vh;
   width:100vw;
   color:#929191;
+  
 }
 
 .content{
@@ -453,7 +454,7 @@
 @media (max-width: 768px) {
   .aboutMe {
     background-size: contain;
-    height:90vh;
+    height:100vh;
   }
  
   .body{
@@ -558,7 +559,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .aboutMe {
     background-size: contain;
-    height:90vh;
+    height:100vh;
   }
  
   .body{
