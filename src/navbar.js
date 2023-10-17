@@ -49,14 +49,14 @@ function Navbars() {
               Contact
             </Nav.Link>
 
-            <Nav.Link
+            {/* <Nav.Link
               as={Link}
               to="/funfacts"
               onClick={() => handleNavClick('/funfacts')}
               className={location.pathname === '/funfacts' ? 'active' : ''}
               >
                 Doodles
-              </Nav.Link>
+              </Nav.Link> */}
 
           </Nav>
         </Navbar.Collapse>

@@ -387,7 +387,7 @@
 } */
 
 .scrollButton{
-  margin-top:1.8rem;
+  margin-top:3rem;
 }
 
 .glow-on-hover {
@@ -610,12 +610,7 @@
     margin-top: -120px;
   }
   
-  .scrollButton{
-    margin:0rem;
-    margin-top: 1.5rem;
-    left: 15%;
-    transform: translate(-50%);
-  }
+ 
 
 
   .interest{
