@@ -412,7 +412,7 @@ function AboutMe() {
                     <Col>
             <div className='content'>
                 <h3>Hi! I am Tina.</h3>
-                <p style={{marginTop: '40px'}}>A front-End Developer with an insatiable appetite for creativity and a boundless curiosity about the magical realm of interaction design!</p>  
+                <p style={{marginTop: '20px', fontSize: '1rem'}}>A front-End Developer with an insatiable appetite for creativity and a boundless curiosity about the magical realm of interaction design!</p>  
                 <p>I started my journey by creating educational content that could meet the different needs of students with varying abilities and learning levels. During this process, I discovered my ability to improve user experiences and interactions through design and technology. This led me to explore the world of UX design, and I quickly realized that my journey was far from over. Bringing my designs to life became my next goal, and I haven't looked back since.</p>
                 <Button onClick={scrollToSecondPage} className='scrollButton glow-on-hover'> More about me </Button> 
             </div>
