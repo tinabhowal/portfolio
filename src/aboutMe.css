@@ -465,7 +465,7 @@
   .content {
     width: 90vw; 
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
     padding: 1rem;
