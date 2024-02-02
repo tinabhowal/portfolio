@@ -24,11 +24,12 @@ const Projects = () => {
     
     {
       id: 1,
-      title: 'Pokemon',
-      image: oldPokemon,
-      description:'A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.',
-      demoLink: 'https://tinabhowal.github.io/simple-js-app/',
-      githubLink: 'https://github.com/tinabhowal/simple-js-app',
+      title: 'myFlix-client-React',
+      image: reactImage,
+      description:'Using React, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database).',
+      demoLink: 'https://figma--mymoviesflix.netlify.app/login',
+      githubLink: 'https://github.com/tinabhowal/myFlix-client',
+      
       
     },
 
@@ -54,11 +55,12 @@ const Projects = () => {
 
     {
       id: 4,
-      title: 'myFlix-client-React',
-      image: reactImage,
-      description:'Using React, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database).',
-      demoLink: 'https://figma--mymoviesflix.netlify.app/login',
-      githubLink: 'https://github.com/tinabhowal/myFlix-client',
+      title: 'My React Portfolio',
+      image: portfolio,
+      description: 'My first practice portfolio, which was built using HTML and CSS, has been rebuilt using React js.',
+      githubLink: 'https://github.com/tinabhowal/portfolio',
+      caseStudy: 'https://drive.google.com/file/d/1BBtT_q4DEGLv1ZpKviQ-gQtI1GbkfNf1/view?usp=sharing'
+      
       
     },
 
@@ -111,11 +113,12 @@ const Projects = () => {
 
     {
       id: 10,
-      title: 'My React Portfolio',
-      image: portfolio,
-      description: 'My first practice portfolio, which was built using HTML and CSS, has been rebuilt using React js.',
-      githubLink: 'https://github.com/tinabhowal/portfolio',
-      caseStudy: 'https://drive.google.com/file/d/1BBtT_q4DEGLv1ZpKviQ-gQtI1GbkfNf1/view?usp=sharing'
+      title: 'Pokemon',
+      image: oldPokemon,
+      description:'A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.',
+      demoLink: 'https://tinabhowal.github.io/simple-js-app/',
+      githubLink: 'https://github.com/tinabhowal/simple-js-app',
+      
     }
     
   ];
