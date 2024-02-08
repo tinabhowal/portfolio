@@ -13,6 +13,7 @@ import myFlixApi from './images/myFlixApi.png';
 import newPoke from './images/newPokemon.png';
 import Figma5 from './images/Figma5.png';
 import portfolio from './images/newprof2.png';
+import dailyGermanPhrase from './images/dailyGermanPhrase.png';
 
 
 const Projects = () => {
@@ -35,6 +36,16 @@ const Projects = () => {
 
     {
       id: 2,
+      title: 'Daily German Phrase',
+      image: dailyGermanPhrase,
+      description:'A React application for beginners learning German to receive regular emails with a German phrase. ',
+      demoLink: 'https://dailygermanphrase.vercel.app/',
+      githubLink: 'https://github.com/tinabhowal/germanPhraseDynamoDB',
+      
+    },
+
+    {
+      id: 3,
       title: 'NewPokemon',
       image: newPoke,
       description:'The same Pokemon web application with swiper.js',
@@ -44,7 +55,7 @@ const Projects = () => {
     },
 
     {
-      id: 3,
+      id: 4,
       title: 'myFlix-api',
       image: myFlixApi,
       description:'The server-side component of a “movies” web application. The web application provides users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.',
@@ -54,7 +65,7 @@ const Projects = () => {
     },
 
     {
-      id: 4,
+      id: 5,
       title: 'My React Portfolio',
       image: portfolio,
       description: 'My first practice portfolio, which was built using HTML and CSS, has been rebuilt using React js.',
@@ -65,7 +76,7 @@ const Projects = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       title: 'myFlix-client-Angular',
       image: angular,
       description:'Using Angular, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database).',
@@ -75,7 +86,7 @@ const Projects = () => {
     },
 
     {
-      id: 6,
+      id: 7,
       title: 'MeetApp',
       image: meetApp,
       description:'A serverless, progressive web application (PWA) is built with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.',
@@ -85,7 +96,7 @@ const Projects = () => {
     },
 
     {
-      id: 7,
+      id: 8,
       title: 'ChatApp',
       image: chatApp1,
       description:'A chat app for mobile devices using React Native. The app provides users with a chat interface and options to share images, videos and their location.',
@@ -95,7 +106,7 @@ const Projects = () => {
     },
 
     {
-      id: 8,
+      id: 9,
       title: 'My first practice portfolio',
       image: firstPortfolio,
       description:'A responsive website using HTML and CSS that showcases my first practice portfolio.',
@@ -105,14 +116,14 @@ const Projects = () => {
     },
 
     {
-      id: 9,
+      id: 10,
       title: 'My Figma experiments',
       image:  Figma5,
       figmaLink: '/figma'
     },
 
     {
-      id: 10,
+      id: 11,
       title: 'Pokemon',
       image: oldPokemon,
       description:'A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.',
