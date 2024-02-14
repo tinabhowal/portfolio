@@ -38,7 +38,7 @@ const Projects = () => {
       id: 2,
       title: 'Daily German Phrase',
       image: dailyGermanPhrase,
-      description:'A React application for beginners learning German to receive regular emails with a German phrase. ',
+      description:'An AWS learning and development project. An application for beginners learning German to receive regular emails with a German phrase. The frontend is built with React. The backend has Lambda, AWS SES, API Gateway at work.',
       demoLink: 'https://dailygermanphrase.vercel.app/',
       githubLink: 'https://github.com/tinabhowal/germanPhraseDynamoDB',
       
