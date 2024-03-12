@@ -4,17 +4,17 @@ import Navbar from './navbar';
 import './projects.css';
 import { Card, Button, Container, Row, Col, Modal } from 'react-bootstrap';
 import reactImage from './images/myflix client react.png';
-import oldPokemon from './images/oldPoke.png';
-import angular from './images/angular.png';
-import meetApp from './images/meetapp.png';
-import chatApp1 from './images/chatapp screenshots.jpeg';
-import firstPortfolio from './images/firstportfolio.png';
+//import oldPokemon from './images/oldPoke.png';
+//import angular from './images/angular.png';
+//import meetApp from './images/meetapp.png';
+//import chatApp1 from './images/chatapp screenshots.jpeg';
+//import firstPortfolio from './images/firstportfolio.png';
 import myFlixApi from './images/myFlixApi.png';
-import newPoke from './images/newPokemon.png';
+//import newPoke from './images/newPokemon.png';
 import Figma5 from './images/Figma5.png';
 import portfolio from './images/newprof2.png';
 import dailyGermanPhrase from './images/dailyGermanPhrase.png';
-
+import chatImage from './images/Colorful Planner Mobile App Promotion Instagram Post.png';
 
 const Projects = () => {
 
@@ -26,8 +26,9 @@ const Projects = () => {
     {
       id: 1,
       title: 'myFlix-client-React',
+      toolsAndLibraries: ['#React', '#React Bootstrap', '#React Redux', '#React Router', '#REST API'],
       image: reactImage,
-      description:'Using React, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database).',
+      description:'Using React, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database). It also uses React Redux for state management and React Bootstrap for a neat UI.',
       demoLink: 'https://figma--mymoviesflix.netlify.app/login',
       githubLink: 'https://github.com/tinabhowal/myFlix-client',
       
@@ -37,6 +38,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'Daily German Phrase',
+      toolsAndLibraries: ['#AWS', '#DynamoDB', '#SES', '#AWS API Gateway', '#React', ],
       image: dailyGermanPhrase,
       description:'An AWS learning and development project. An application for beginners learning German to receive regular emails with a German phrase. The frontend is built with React. The backend has Lambda, AWS SES, API Gateway at work.',
       demoLink: 'https://dailygermanphrase.vercel.app/',
@@ -44,21 +46,22 @@ const Projects = () => {
       
     },
 
-    {
-      id: 3,
-      title: 'NewPokemon',
-      image: newPoke,
-      description:'The same Pokemon web application with swiper.js',
-      demoLink: '',
-      githubLink: 'https://github.com/tinabhowal/newCartoon/tree/main',
+    // {
+    //   id: 3,
+    //   title: 'NewPokemon',
+    //   image: newPoke,
+    //   description:'The same Pokemon web application with swiper.js',
+    //   demoLink: '',
+    //   githubLink: 'https://github.com/tinabhowal/newCartoon/tree/main',
       
-    },
+    // },
 
     {
       id: 4,
       title: 'myFlix-api',
+      toolsAndLibraries: ['#NodeJS', '#Express', '#Passport', '#User Authentication', '#REST API', '#MongoDB'],
       image: myFlixApi,
-      description:'The server-side component of a “movies” web application. The web application provides users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies.',
+      description:'The server-side component of a “movies” web application built with NodeJS and Express. The web application provides users with access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies. User authentication is taken care of by Passport local strategy and JWT token. For the database, MongoDB has been used.',
       // demoLink: 'https://myflix-gqp8.onrender.com',
       githubLink: 'https://github.com/tinabhowal/movie_api',
       
@@ -67,6 +70,7 @@ const Projects = () => {
     {
       id: 5,
       title: 'My React Portfolio',
+      toolsAndLibraries: ['#React', '#React Router'],
       image: portfolio,
       description: 'My first practice portfolio, which was built using HTML and CSS, has been rebuilt using React js.',
       githubLink: 'https://github.com/tinabhowal/portfolio',
@@ -75,62 +79,65 @@ const Projects = () => {
       
     },
 
-    {
-      id: 6,
-      title: 'myFlix-client-Angular',
-      image: angular,
-      description:'Using Angular, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database).',
-      demoLink: 'https://my-flix-angular-client-qh47v87k4-tinabhowal.vercel.app/welcome',
-      githubLink: 'https://github.com/tinabhowal/myFlix-Angular-client',
+    // {
+    //   id: 6,
+    //   title: 'myFlix-client-Angular',
+    //   image: angular,
+    //   description:'Using Angular, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database).',
+    //   demoLink: 'https://my-flix-angular-client-qh47v87k4-tinabhowal.vercel.app/welcome',
+    //   githubLink: 'https://github.com/tinabhowal/myFlix-Angular-client',
      
-    },
+    // },
 
-    {
-      id: 7,
-      title: 'MeetApp',
-      image: meetApp,
-      description:'A serverless, progressive web application (PWA) is built with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.',
-      demoLink: 'https://tinabhowal.github.io/meet/',
-      githubLink: 'https://github.com/tinabhowal/meet',
+    // {
+    //   id: 7,
+    //   title: 'MeetApp',
+    //   image: meetApp,
+    //   description:'A serverless, progressive web application (PWA) is built with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.',
+    //   demoLink: 'https://tinabhowal.github.io/meet/',
+    //   githubLink: 'https://github.com/tinabhowal/meet',
       
-    },
+    // },
 
     {
       id: 8,
       title: 'ChatApp',
-      image: chatApp1,
-      description:'A chat app for mobile devices using React Native. The app provides users with a chat interface and options to share images, videos and their location.',
+      toolsAndLibraries: ['#React Native', '#Gifted Chat', '#Google Firestore', '#Expo'],
+      image: chatImage,
+      description:'Mobile chat apps are among the most commonly downloaded and used apps in the world, so knowing how to build a chat app is an indispensable skill. The app demonstrates React Native development skills. It provides users with a chat interface and options to share images, videos and their location. Expo and Giften Chat library has been used to develop the app and Google Firestore to store the chat messages.',
       demoLink: 'https://drive.google.com/file/d/1-XRlqpVIKAqozukG8f5NgiyH276M0UW0/view?usp=sharing',
       githubLink: 'https://github.com/tinabhowal/Chat-App',
       
     },
 
-    {
-      id: 9,
-      title: 'My first practice portfolio',
-      image: firstPortfolio,
-      description:'A responsive website using HTML and CSS that showcases my first practice portfolio.',
-      demoLink: 'https://tinabhowal.github.io/tinaprofile/careerfoundry/',
-      githubLink: 'https://github.com/tinabhowal/tinaprofile',
+    // {
+    //   id: 9,
+    //   title: 'My first practice portfolio',
+    //   image: firstPortfolio,
+    //   description:'A responsive website using HTML and CSS that showcases my first practice portfolio.',
+    //   demoLink: 'https://tinabhowal.github.io/tinaprofile/careerfoundry/',
+    //   githubLink: 'https://github.com/tinabhowal/tinaprofile',
       
-    },
+    // },
 
     {
       id: 10,
       title: 'My Figma experiments',
+      toolsAndLibraries: ['#Figma', '#DailyUI Challenge'],
+      description: 'Some of my experiments with Figma as a participant of Daily UI Challenge.',
       image:  Figma5,
       figmaLink: '/figma'
     },
 
-    {
-      id: 11,
-      title: 'Pokemon',
-      image: oldPokemon,
-      description:'A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.',
-      demoLink: 'https://tinabhowal.github.io/simple-js-app/',
-      githubLink: 'https://github.com/tinabhowal/simple-js-app',
+    // {
+    //   id: 11,
+    //   title: 'Pokemon',
+    //   image: oldPokemon,
+    //   description:'A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.',
+    //   demoLink: 'https://tinabhowal.github.io/simple-js-app/',
+    //   githubLink: 'https://github.com/tinabhowal/simple-js-app',
       
-    }
+    // }
     
   ];
 
@@ -160,9 +167,10 @@ const Projects = () => {
         {displayedProjects.map((project) => (
           <Col key={project.id} xs={12} md={4} className="project-col">
             <Card  className='card'>
-              <Card.Img className="project-image" variant='top' src={project.image} />
+              <Card.Img className="project-image" variant='top' src={project.image}  />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
+                {project.toolsAndLibraries && (<Card.Text>{project.toolsAndLibraries.join('  ')}</Card.Text>)}
                 {project.demoLink && (
                   <Button className='project-button' variant='primary'>
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color: 'white'}}>
@@ -181,10 +189,9 @@ const Projects = () => {
                 )}
                 {' '}
 
-                {project.id === 9 && project.figmaLink && (
+                {project.id === 10 && project.figmaLink && (
                   <Button
-                  className='border'
-                  variant='light'
+                  className='project-button' variant='primary'
                   href={project.figmaLink}
                 >
                   Show Figma Projects
