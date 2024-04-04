@@ -25,7 +25,7 @@ const Contact = () => {
           <p><b>Location:</b>  <i> Berlin</i></p>
           {/* <p><b><i>Ph: +176-7483-9525</i></b> </p> */}
           <p><b>Email: </b><i><a className='link' href='mailto:tinabhawal5@gmail.com'> Contact me via email</a></i></p>
-          <p><b>Resume: </b><i><a className='link' href='https://drive.google.com/file/d/1jX2n6gt4Sfi07edJ1_ljrBFZ27A4ijsX/view?usp=sharing' target='blank'>Download Resume</a></i></p>
+          <p><b>Resume: </b><i><a className='link' href='https://drive.google.com/file/d/15Xipz0TZF4yAcKl3sEPQoOpoyobiiAV8/view?usp=sharing' target='blank'>Download Resume</a></i></p>
         </Col>
       </Row>
       </div>
