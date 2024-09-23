@@ -53,6 +53,8 @@ function AboutMe() {
           </Row>
         </Container>   
         </div>
+
+
         <div ref={secondPageRef} className='secondPage'>
         <Container>
           <Row>
@@ -67,10 +69,20 @@ function AboutMe() {
                <p className='interest'>
                <h3>Why Consider Hiring Me?</h3>
 
-<p>🚀 Full Stack Expertise: Armed with proficiency in <span> HTML, CSS, and JavaScript </span>, I am well-versed in modern frontend technologies, including <span>React, Jest, and React Redux </span>. My solid foundation in <span>AWS Cloud Computing </span>enhances my ability to create robust and scalable applications.</p>
+{/* <p>🚀 Full Stack Expertise: Armed with proficiency in <span> HTML, CSS, and JavaScript </span>, I am well-versed in modern frontend technologies, including <span>React, Jest, and React Redux </span>. My solid foundation in <span>AWS Cloud Computing </span>enhances my ability to create robust and scalable applications.</p>
 
 <p>🌐 Versatility: Beyond frontend development, I bring a valuable touch of <span>TypeScript </span>to the table. Additionally, my foray into <span>UX design</span>, marked by the completion of an introductory course, equips me with a holistic perspective on 
 crafting user-friendly and visually appealing interfaces.
+
+</p> */}
+
+<p>🚀 Frontend Development: I have hands-on experience with frontend technologies like <span>React, React Redux, and React with TypeScript </span>. I’ve also worked with <span>Jest</span> for testing applications, which has helped me build more reliable and maintainable code.</p>
+
+<p>🌐 Full-Stack Familiarity: While I enjoy frontend development, I’m also well familiar with backend technologies such as <span>Node.js and Express</span>, giving me a better understanding of how the full stack works together.</p>
+
+<p>☁️ Cloud Computing: I have foundational knowledge of <span>AWS</span> services such as Lambda, API Gateway, IAM, S3, DynamoDB, EC2, VPC, etc. I’m eager to deepen my skills in cloud computing and expand my understanding of cloud services.</p>
+
+<p>💡 Versatility: In addition to my frontend development skills, I’ve gained a strong foundation in <span>UX design</span> through an introductory course. This gives me a well-rounded approach to creating user-friendly and visually appealing interfaces. I also have functional knowledge of <span>German/Deutsch</span> and am currently pursuing B1.1 proficiency.
 
 </p>
 
@@ -80,12 +92,12 @@ crafting user-friendly and visually appealing interfaces.
 
 <h6>Certifications and Achievements:</h6>
 <ul>
-<li>🏆 Bootcamp Graduate: Full Stack Web Development </li>
-<li>🌐 AWS Cloud Computing</li>
-<li>📘 Introduction to UX Design Course Completion</li>
+<li>🏆 Career Foundry Graduate: Full Stack Web Development </li>
+<li>🌐 Career Foundry Graduate: AWS Cloud Computing</li>
+<li>📘 Career Foundry Graduate: Introduction to UX Design Course Completion</li>
 </ul>
 
-<h3>Why I Transitioned:</h3>
+<h3>Why have I Transitioned?</h3>
 
 <p>My transition from the education sector to tech stems from a deep-seated passion for problem-solving and a desire to create meaningful digital experiences. Leveraging my teaching and training background, I bring a fresh perspective to frontend development—translating complex ideas into user-friendly applications.
 
@@ -95,10 +107,12 @@ I am excited about the prospect of contributing my skills and experience to a dy
                                 }
 
 <p>
-<button onClick={toggleShowMore}>{showMore? "Collapse":"...Read more"}</button>
+<Button style={{backgroundColor: 'transparent', border: 'none'}} onClick={toggleShowMore}>
+    {!showMore && "...Read more"}
+    </Button>
 </p>
                                 
-                                <div className='buttonDiv'>
+                <div className='buttonDiv'>
                 <Button onClick={scrollToSkills} className='skillButton  glow-on-hover'>Check out my skills</Button>
                 <Button  className='skillButton  glow-on-hover'><Link to="/projects" style={{color:'#929191', textDecoration:'none'}}>Check out my projects</Link></Button>
                 </div>

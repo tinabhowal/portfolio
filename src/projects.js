@@ -11,6 +11,8 @@ import reactImage from './images/myflix client react.png';
 //import firstPortfolio from './images/firstportfolio.png';
 import myFlixApi from './images/myFlixApi.png';
 //import newPoke from './images/newPokemon.png';
+import myLilDictionary from './images/myLittleDictionary.png';
+import bonCafe from './images/bonCafe.png';
 import Figma5 from './images/Figma5.png';
 import portfolio from './images/newprof2.png';
 import dailyGermanPhrase from './images/dailyGermanPhrase.png';
@@ -22,16 +24,24 @@ const Projects = () => {
   const [showModal, setShowModal] = useState(false);
 
   const projects = [
+
+    {
+      id: '17',
+      title: 'BonCaffe',
+      toolsAndLibraries: ['#HTML', '#CSS', '#Javascript'],
+      image: bonCafe,
+      description:'Collaborated with other developer in building a website for a cafe.',
+      demoLink: 'https://boncaffe.in/',
+    },
     
     {
-      id: 1,
-      title: 'myFlix-client-React',
-      toolsAndLibraries: ['#React', '#React Bootstrap', '#React Redux', '#React Router', '#REST API'],
-      image: reactImage,
-      description:'Using React, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database). It also uses React Redux for state management and React Bootstrap for a neat UI.',
-      demoLink: 'https://figma--mymoviesflix.netlify.app/login',
-      githubLink: 'https://github.com/tinabhowal/myFlix-client',
-      
+      id: 3,
+      title: 'Translation App',
+      toolsAndLibraries: ['#Chatgpt Open AI API', '#AWS Lambda', '#AWS API Gateway', '#AWS DynamoDB', '#Google User Authentication'],
+      image: myLilDictionary,
+      description:'Translation web application integrated with ChatGPT Open AI API. It helps to translate and save the translations for future use. One can also play games with the saved words/translations to reinforce learning. ChatGPT Open AI API has been used for translating and generating games. The saved translations are saved in AWS DynamoDB.',
+      demoLink: 'https://mylittledictionary.vercel.app/',
+      githubLink: 'https://github.com/tinabhowal/my-little-dictionary',
       
     },
 
@@ -45,16 +55,16 @@ const Projects = () => {
       githubLink: 'https://github.com/tinabhowal/germanPhraseDynamoDB',
       
     },
-
-    // {
-    //   id: 3,
-    //   title: 'NewPokemon',
-    //   image: newPoke,
-    //   description:'The same Pokemon web application with swiper.js',
-    //   demoLink: '',
-    //   githubLink: 'https://github.com/tinabhowal/newCartoon/tree/main',
-      
-    // },
+    
+    {
+      id: 1,
+      title: 'myFlix-client-React',
+      toolsAndLibraries: ['#React', '#React Bootstrap', '#React Redux', '#React Router', '#REST API'],
+      image: reactImage,
+      description:'Using React, the client-side for an app called myFlix is built based on its existing server-side code (REST API and database). It also uses React Redux for state management and React Bootstrap for a neat UI.',
+      demoLink: 'https://figma--mymoviesflix.netlify.app/login',
+      githubLink: 'https://github.com/tinabhowal/myFlix-client',
+    },
 
     {
       id: 4,
@@ -171,6 +181,7 @@ const Projects = () => {
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 {project.toolsAndLibraries && (<Card.Text>{project.toolsAndLibraries.join('  ')}</Card.Text>)}
+                <div className='buttons'>
                 {project.demoLink && (
                   <Button className='project-button' variant='primary'>
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color: 'white'}}>
@@ -231,6 +242,7 @@ const Projects = () => {
                   </Button>
                   )}
                 {/* )} */}
+                </div>
               </Card.Body>
             </Card>
           </Col>

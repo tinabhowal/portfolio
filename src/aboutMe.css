@@ -278,21 +278,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height:170vh;
   width:100vw;
+  min-height: 100vh;
   margin-top: 0;
   position: relative;
+  padding-bottom: 5rem;
 }
 
-.interest{
-  position: absolute;
-  top: 10%;
+
+.interest {
+  position: relative; 
   width: 50vw;
-  left: 50%;
-  transform: translate(-50%);
-  color:#929191;
-  height: 100vh;
+  margin: 0 auto;
+  color: #929191;
+  padding-top: 2rem; 
+  padding-bottom: 3rem; 
+  min-height: 100vh;
 }
+
 
 .buttonDiv{
   margin-top: 2rem;
@@ -301,17 +304,19 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  position: relative;
 }
 
 .skills{
-  /* margin-top: 20vh; */
-  height: 70vh;
+  margin-top: 20vh;
+  /* height: 70vh; */
   width:100vw;
   color:#929191;
   display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   /* gap: 4rem; */
 
   padding: 1rem; /* Add padding to the container */
@@ -453,8 +458,11 @@ font-weight:bolder;
 /* color: #83CBFF; */
 /* color: #baddf6; */
 /* color: #002bff; */
-color: #002bff;
+/* color: #002bff; */
+color: #0D6EFD;
 }
+
+
 
 @keyframes glowing {
   0% { background-position: 0 0; }
