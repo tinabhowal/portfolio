@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,18 +6,36 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './navbar.css';
 
 function Navbars() {
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if(offset > 50) {
+        setScrolled(true);
+      }else{
+        setScrolled(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      }
+  },[])
 
   const handleNavClick = (path) => {
     navigate(path);
   };
 
   return (
-    <Navbar className="navbar" expand="lg" variant="dark">
+    <Navbar className={`navbar ${scrolled ? 'scrolled' : ''}`} expand="lg" variant="dark">
       <Container fluid className='navC' >
       <Navbar.Brand as={Link} to="/" onClick={() => handleNavClick('/')} className="name">
-         <h1>Tina Bhawal</h1>
+         <h1 className='navTitle'>Tina Bhawal</h1>
         </Navbar.Brand>
         <Navbar.Toggle className="ml-auto" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -66,3 +84,9 @@ function Navbars() {
 }
 
 export default Navbars;
+
+
+
+
+
+
