@@ -4,6 +4,7 @@ import Navbar from './navbar';
 import './projects.css';
 import { Card, Button, Container, Row, Col, Modal } from 'react-bootstrap';
 import reactImage from './images/myflix client react.png';
+import hazel from './images/hazel.png';
 //import oldPokemon from './images/oldPoke.png';
 //import angular from './images/angular.png';
 //import meetApp from './images/meetapp.png';
@@ -25,6 +26,14 @@ const Projects = () => {
 
   const projects = [
 
+    {
+      id: '14',
+      title: 'Hazel Patisserie',
+      toolsAndLibraries: ['React with Typescript', 'React Redux', 'Framer Motion', 'React Slick', 'Nodejs', 'Express', 'MongoDB'],
+      image: hazel,
+      description:'A website for Bangalore based bakery, Hazel Patisserie.',
+      demoLink: 'https://hazelpatisserie.com/',
+    },
     {
       id: '17',
       title: 'BonCaffe',
